@@ -4,6 +4,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+  <title>{data.meta.title} | Consterion blog</title>
+</svelte:head>
+
 <article>
 	<hgroup>
 		<p class="-mt-3 md:-mt-5 text-neutral-700 dark:text-neutral-100">

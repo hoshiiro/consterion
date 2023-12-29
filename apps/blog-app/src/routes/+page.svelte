@@ -3,6 +3,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+  <title>Consterion blog</title>
+</svelte:head>
+
 <article class="not-prose mb-5">
 	<ul class="flex flex-col gap-6">
 		{#each data.posts as post}
