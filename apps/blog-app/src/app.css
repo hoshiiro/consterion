@@ -1,0 +1,58 @@
+/* Write your global styles here, in PostCSS syntax */
+@import '@fontsource-variable/jetbrains-mono';
+@import '@fontsource-variable/inter';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply
+    text-neutral-800
+    dark:bg-neutral-900
+    dark:text-neutral-200;
+	}
+  body {
+    font-family: 'Inter Variable';
+    overflow-x: hidden;
+  }
+	main {
+		@apply mx-auto max-w-prose;
+	}
+	pre,
+	code {
+		font-family: 'Jetbrains Mono Variable';
+	}
+	article {
+		@apply 
+    prose 
+    prose-sm 
+    prose-neutral 
+    md:prose-base 
+    lg:prose-lg 
+    dark:prose-invert
+    prose-pre:text-sm
+	}
+  img {
+    object-fit: cover;
+  }
+  article img {
+    width:100vh;
+	}
+}
+
+@layer components {
+	header,
+	article,
+	footer {
+		@apply p-6;
+	}
+	a {
+		@apply text-green-600 underline underline-offset-2 dark:text-green-400;
+	}
+}
+
+@layer utilities {
+  .mono { font-family: "Jetbrains Mono Variable"; }
+}
