@@ -8,15 +8,14 @@
 
 @layer base {
 	html {
-		@apply
-    text-neutral-800
+		@apply text-neutral-800
     dark:bg-neutral-900
     dark:text-neutral-200;
 	}
-  body {
-    font-family: 'Inter Variable';
-    overflow-x: hidden;
-  }
+	body {
+		font-family: 'Inter Variable';
+		overflow-x: hidden;
+	}
 	main {
 		@apply mx-auto max-w-prose;
 	}
@@ -25,20 +24,19 @@
 		font-family: 'Jetbrains Mono Variable';
 	}
 	article {
-		@apply 
-    prose 
+		@apply prose 
     prose-sm 
     prose-neutral 
     md:prose-base 
     lg:prose-lg 
     dark:prose-invert
-    prose-pre:text-sm
+    prose-pre:text-sm;
 	}
-  img {
-    object-fit: cover;
-  }
-  article img {
-    width:100vh;
+	img {
+		object-fit: cover;
+	}
+	article img {
+		width: 100vh;
 	}
 }
 
@@ -54,5 +52,7 @@
 }
 
 @layer utilities {
-  .mono { font-family: "Jetbrains Mono Variable"; }
+	.mono {
+		font-family: 'Jetbrains Mono Variable';
+	}
 }

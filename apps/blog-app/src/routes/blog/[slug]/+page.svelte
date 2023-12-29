@@ -5,14 +5,15 @@
 </script>
 
 <svelte:head>
-  <title>{data.meta.title} | Consterion blog</title>
+	<title>{data.meta.title} | Consterion blog</title>
 </svelte:head>
 
 <article>
 	<hgroup>
-		<p class="-mt-3 md:-mt-5 text-neutral-700 dark:text-neutral-100">
-      <span class="dark:text-neutral-400 text-neutral-500">Published at</span> {formatDate(data.meta.date)}
-    </p>
+		<p class="-mt-3 text-neutral-700 md:-mt-5 dark:text-neutral-100">
+			<span class="text-neutral-500 dark:text-neutral-400">Published at</span>
+			{formatDate(data.meta.date)}
+		</p>
 		<h1>{data.meta.title}</h1>
 	</hgroup>
 	<svelte:component this={data.content} />

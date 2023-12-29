@@ -12,7 +12,7 @@ const mdsvexOptions = {
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await shiki.getHighlighter({ theme: 'github-dark' });
-      const html = escapeSvelte(highlighter.codeToHtml(code, lang))
+			const html = escapeSvelte(highlighter.codeToHtml(code, lang));
 			return `{@html \`${html}\`}`;
 		}
 	},
@@ -25,7 +25,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter(),
+		adapter: adapter()
 	}
 };
 

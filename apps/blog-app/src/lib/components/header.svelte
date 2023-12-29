@@ -19,7 +19,7 @@
 			{config.description}
 		</p>
 		<nav class="flex flex-row gap-3 text-sm">
-      <a href="/blog/about">about</a>
+			<a href="/blog/about">about</a>
 			<a href="/rss.xml">rss</a>
 		</nav>
 	</div>
